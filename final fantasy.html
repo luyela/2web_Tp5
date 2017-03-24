@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Al-Bhed translator </title>
+    <meta charset="utf-8" />
+
+</head>
+<body>
+<table>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+        <td>J</td>
+        <td>K</td>
+        <td>L</td>
+        <td>M</td>
+        <td>N</td>
+        <td>O</td>
+        <td>P</td>
+        <td>Q</td>
+        <td>R</td>
+        <td>S</td>
+        <td>T</td>
+        <td>U</td>
+        <td>V</td>
+        <td>W</td>
+        <td>X</td>
+        <td>Y</td>
+        <td>Z</td>
+    </tr>
+    <tr>
+        <td>Y</td>
+        <td>P</td>
+        <td>L</td>
+        <td>T</td>
+        <td>A</td>
+        <td>V</td>
+        <td>K</td>
+        <td>R</td>
+        <td>E</td>
+        <td>Z</td>
+        <td>G</td>
+        <td>M</td>
+        <td>S</td>
+        <td>H</td>
+        <td>U</td>
+        <td>B</td>
+        <td>X</td>
+        <td>N</td>
+        <td>C</td>
+        <td>D</td>
+        <td>I</td>
+        <td>J</td>
+        <td>F</td>
+        <td>Q</td>
+        <td>O</td>
+        <td>W</td>
+    </tr>
+</table>
+<?php
+$string_in = 'a.p.r.i.c.o.t';
+    function translate($string) {
+$tmp_out = array();
+$tmp_in = explode('.', $string);
+foreach ($tmp_in as $key =>$value)
+{
+$tmp_out[] = $map[$value];
+}
+return implode('.', $tmp_out);
+}
+echo translate($string_in);
+?>
+</body>
+</html>
